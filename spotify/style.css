@@ -1,0 +1,189 @@
+@font-face {
+    font-family: CirculaSP;
+    src: url(static/fonts/circular-std-2.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: CirculaSP;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+body {
+    background-color: #000000;
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    height: 94%;
+}
+
+.left {
+    width: 27.07%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.right {
+    width: 72.93%;
+}
+
+/* Navbar */
+
+#homelink, #searchlink {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#homelink .icon, #searchlink .icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    font-size: 20px;
+}
+
+#homelink span, #searchlink span {
+    display: flex;
+    align-items: center;
+} 
+
+
+/* Navbar/Logo */
+.left .logo {
+    width: 30%;
+    margin-top: 10px;
+}
+
+.left .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.left > .nav, .left > .library {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Library */
+.library {
+    height: 100%;
+}
+
+.nav, .library {
+    background-color: #121212;
+}
+
+.left > .library .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+} 
+
+.left > .library .header-title {
+    display: flex;
+}
+
+.left > .library .header .logo {
+    width: 11%;
+    margin: 0;
+}
+
+.left > .library .header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.left > .library .header span {
+    display: flex;
+    align-items: center;
+}
+
+.left > .library .header .plus {
+    display: flex;
+    align-items: center;
+}
+
+.library-main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Sidebar-scroll */
+
+.sidebar-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100% - 250px);
+    overflow-y: auto;
+}
+
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+    width: 15px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 5px;
+}
+
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+    width: 5px;
+}
+
+.sidebar-scroll .create {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-scroll .create > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-scroll .create button {
+    border: none;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+    color: black;
+    align-self: flex-start;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.sidebar-scroll .create p {
+    font-size: 12px;
+}
+
+/* Library Footer */
+
+.library-footer {
+    
+}
