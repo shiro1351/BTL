@@ -3,280 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="icon" href="images/Spotify.png">
-    <link rel="stylesheet" href="main.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
-    
+    <title>Login - Spotify</title>
+    <link rel="icon" href="https://bom.so/GzVK9f">
+    <link rel="stylesheet" href="Login.css">
+    <link href="https://fonts.cdnfonts.com/css/galano-grotesque-alt" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
-        <div class="sidebar">
-            <div class="sidebar-in">
-                <div class="logo">
-                    <a href=""><img src="images/logo.png" alt=""></a>
-                </div>
-
-                <ul>
-                    <li><a href="">
-                        <span><i class="fa-solid fa-house"></i></span>
-                        <span>Home</span>
-                    </a></li>
-
-                    <li><a href="">
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <span>Search</span>
-                    </a></li>
-                </ul>
+    <main class="main-content">
+        <div class="login-container">
+            <div class="login-head">
+                <h1>Log in to Spotify</h1>
             </div>
 
-            <div class="second">
-                <div class="libary">
-                    <a href="">
-                        <i class="fa-solid fa-bookmark"></i>Thư viện
-                    </a>
-                    <a href="">+</a>
+            <div class="login-options">
+                <div class="google">
+                    <img src="https://bom.so/nbSyy6" alt="google">
+                    <h4>Continue with Google</h4>
                 </div>
-                    
-                <div class="second2">
-                    <div class="sidebar-cuon">
-                        <div class="create">
-                            <h4>Tạo danh sách phát đầu tiên của bạn</h4>
-                            <p>Rất dễ! Chúng tôi sẽ giúp bạn</p>
-                            <button>Tạo danh sách phát</button>
-                        </div>
-    
-                        <div class="create">
-                            <h4>Hãy cùng tìm và theo dõi một số podcast</h4>
-                            <p>Chúng tôi sẽ cập nhật cho bạn thông tin về các tập mới</p>
-                            <button>Duyệt xem postcast</button>
-                        </div>
-                    </div>
-    
-                        <ul class="privacy">
-                        <li>
-                            <a href="">Pháp lý</a>
-                        </li>
-                        <li>
-                            <a href="">Trung tâm an toàn và riêng tư</a>
-                        </li>
-                        <li>
-                            <a href="">Chính sách quyền riêng tư</a>
-                            <a href="">Cookie</a>
-                        </li>
-                        <li>
-                            <a href="">Giới thiệu Quảng cáo</a>
-                            <a href="">Hỗ trợ tiếp cận</a>
-                        </li>
-                        <li class="Cookie">
-                            <a href="">Cookie</a>
-                        </li>
-                    </ul>
 
-                    <div class="language">
-                        <button>Tiếng Việt</button>
+                <div class="facebook">
+                    <img src="https://bom.so/YrlAsF" alt="facebook">
+                    <h4>Continue with Facebook</h4>
+                </div>
+
+                <div class="apple">
+                    <img src="https://bom.so/bupYzk" alt="apple">
+                    <h4>Continue with Apple</h4>
+                </div>
+
+                <div class="mobile">
+                    <h4>Continue with phone number</h4>
+                </div>
+            </div>
+
+            <div class="login-content">
+                <div class="email-input-box">
+                    <label for="email" class="email-label">Email or username</label>
+                    <input type="email" class="email-input" placeholder="Email or username" required>
+                </div>
+
+                <div class="password-input-box">
+                    <label for="password" class="password-label">Password</label>
+                    <div class="pass-div">
+                        <input type="password" class="password-input" placeholder="Password">
+                        <i class="ri-eye-off-line pass-toggle"></i>
                     </div>
                 </div>
+
+                <div class="remember">
+                    <input type="checkbox" class="rem-check" checked>
+                    <span class="rem-txt">Remember me</span>
+                </div>
+
+                <div class="login-button">
+                    <button type="submit" class="login-btn">Log In</button>
+                </div>
+
+                <div class="forgot">
+                    <a href="#" class="forgot-txt">Forgot your password?</a>
+                </div>
+            </div>
+
+            <div class="signUp">
+                <span class="signUp-txt">Don't have an account? <a href="#">Sign up for Spotify</a></span>
             </div>
         </div>
-    </div>
-
-    <div class="main-container">
-        <div class="border-in">
-            <div class="top">
-                <div class="prev-but">
-                    <button>
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    
-                    <button>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                </div>
-    
-                <div class="login-but">
-                    <button class="sign-up">Đăng ký</button>
-                    <button class="login"> Đăng nhập</button>
-                </div>
-            </div>
-    
-            <div class="list">
-                <div class="spotify-list">
-                    <h2>Album phổ biến</h2>
-                    <div class="card">
-                        <div class="item">
-                            <img src="images/image1.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>GOLDEN</h4>
-                                <p>Jung Kook</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image2.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>Đánh Đổi</h4>
-                                <p>Obito</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image3.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>Right Place, Wrong Person</h4>
-                                <p>RM</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image4.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>99%</h4>
-                                <p>RPT MCK</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image5.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>LOI CHOI : The Neo Pop Punk</h4>
-                                <p>Wren Ivans, itsnk</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="spotify-list">
-                    <h2>Radio phổ biến</h2>
-                    <div class="card">
-                        <div class="item">
-                            <img src="images/image1.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>GOLDEN</h4>
-                                <p>Jung Kook</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image2.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>Đánh Đổi</h4>
-                                <p>Obito</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image3.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>Right Place, Wrong Person</h4>
-                                <p>RM</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image4.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>99%</h4>
-                                <p>RPT MCK</p>
-                            </div>
-                        </div>
-        
-                        <div class="item">
-                            <img src="images/image5.png" alt="">
-                            <div class="play-but">
-                                <span><i class="fa-solid fa-play"></i></span>
-                                <h4>LOI CHOI : The Neo Pop Punk</h4>
-                                <p>Wren Ivans, itsnk</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-    
-            <div class="footer-container">
-                <div class="footer">
-                    <div class="links">
-                        <div class="footer-column">
-                            <div>Công ty</div>
-                            <ul class="col-links">
-                                <li><a href="">Giới thiệu</a></li>
-                                <li><a href="">Việc làm</a></li>
-                                <li><a href="">For the Record</a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer-column">
-                            <div>Cộng đồng</div>
-                            <ul class="col-links">
-                                <li><a href="">Dành cho các Nghệ sĩ</a></li>
-                                <li><a href="">Nhà phát triển</a></li>
-                                <li><a href="">Quảng cáo</a></li>
-                                <li><a href="">Nhà đầu tư</a></li>
-                                <li><a href="">Nhà cung cấp</a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer-column">
-                            <div>Liên kết hữu ích</div>
-                            <ul class="col-links">
-                                <li><a href="">Hỗ trợ</a></li>
-                                <li><a href="">Ứng dụng di động miễn phí</a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer-column">
-                            <div>Các gói của Spotify</div>
-                            <ul class="col-links">
-                                <li><a href="">Prenium Individual</a></li>
-                                <li><a href="">Prenium Student</a></li>
-                                <li><a href="">Spotify Free</a></li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <div class="social">
-                        <div>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <hr>
-    
-            <p class="copyright">
-                &copy; 2024 Spotify AB
-            </p>
-        </div>
-    </div>
-    
-
-    <div class="preview">
-        <div class="text">
-            <h4>Xem trước Spotify</h4>
-            <p>Đăng ký để nghe không giới hạn các bài hát và podcast với quảng cáo không thường xuyên. Không cần thẻ tín dụng.</p>
-        </div>
-        
-        <div class="but">
-            <button>Sign-up Free</button>
-        </div>
-    </div>
+    </main>
+    <footer class="footer">
+        <span class="footer-txt">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</span>
+    </footer>
 </body>
 </html>

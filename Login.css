@@ -1,9 +1,4 @@
-/*========== Google Fonts ==========*/
-
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Proza+Libre&display=swap');
-
-/*========== Basic CSS ==========*/
-
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +6,7 @@
 }
 
 body {
-    font-family: "Comic Neue", cursive;
+    font-family: 'Galano Grotesque Alt', sans-serif;
     background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 100%);
 }
 
@@ -31,7 +26,6 @@ img {
     overflow: clip;
 }
 
-/*========== Header ==========*/
 
 .spotify-header {
     width: 100%;
@@ -57,7 +51,6 @@ img {
     font-weight: bold;
 }
 
-/*========== Main Content ==========*/
 
 .main-content {
     padding: 2rem 0;
@@ -134,8 +127,6 @@ img {
     border-color: #fff;
 }
 
-/*========== Login Content ==========*/
-
 .login-content {
     display: flex;
     flex-direction: column;
@@ -165,7 +156,7 @@ img {
     color: #fff;
     padding: .85rem;
     font-size: 1.15rem;
-    font-family: "Comic Neue", cursive;
+    font-family: 'Galano Grotesque Alt', sans-serif;
     font-weight: bold;
     transition: border-color .4s;
 }
@@ -234,7 +225,7 @@ img {
     color: #000;
     font-size: 1.25rem;
     font-weight: bold;
-    font-family: "Comic Neue", cursive;
+    font-family: 'Galano Grotesque Alt', sans-serif;
     padding: .75rem 0;
     margin-top: 1rem;
     border: none;
@@ -276,7 +267,6 @@ img {
     text-align: center;
 }
 
-/*========== Footer ==========*/
 
 .footer {
     width: 100%;
@@ -298,7 +288,6 @@ img {
     color: #949494;
 }
 
-/*========== Media Queries ==========*/
 
 @media screen and (max-width: 785px) {
     .spotify-header {
