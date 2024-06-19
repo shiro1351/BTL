@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(18, 17, 17);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.signup-form {
+    background-color:rgb(18, 17, 17);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.phone-link {
+    color: #1db954;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #1db954;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn.google {
+    background-color: red;
+}
+
+.btn.facebook {
+    background-color: rgb(55, 55, 158);
+}
+
+.btn.apple {
+    background-color: #000;
+}
+
+.divider {
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    background: #fff;
+    height: 1px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+.login{
+    color: white;
+    padding-left: 5px;
+}
+.terms {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.terms a {
+    color: #1db954;
+    text-decoration: none;
+}
+footer{
+    margin-top: 30px;
+    height: 48px;
+    background-color: #004370;
+}
