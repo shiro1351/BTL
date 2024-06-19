@@ -31,9 +31,9 @@ a {
 
 .main {
     display: grid;
-    grid-template-columns: 395px 0.05px 1fr;
+    grid-template-columns: 395px 0.1px 1fr;
     height: 100%;
-    gap: 8px;
+    gap: 4px;
     overflow: hidden;
     min-width: 100px;
 }
@@ -44,6 +44,8 @@ a {
     gap: 10px;
     height: 100%;
     overflow: hidden;
+    width: auto;
+    min-width: 30px;
 }
 /* Navbar*/
 
@@ -274,6 +276,10 @@ a {
     border: 2.5px solid #fff;
 }
 
+body >.signup {
+    background: linear-gradient(90deg, #AE2996, #5299F3);
+}
+
 .right{
     border-radius: 10px;
     background: linear-gradient(rgb(33, 32, 32), #0d0c0c);
@@ -309,7 +315,7 @@ a {
     z-index: 1;
     position: fixed;
     right: 0;
-    left: 419px;
+    left: 411px;
     contain: content;
 }
 
@@ -365,116 +371,45 @@ a {
     border-radius: 30px;
 }
 
-.list{
-    padding: 0px 16.8679px;
-    margin-top: 60px;
+.right .top{
+    background-color: rgba(18, 18, 18, 0.8); /* Màu nền trong suốt */
+    transition: background-color 0.5s;
 }
 
-.Main .list .list-in{
-    display: flex;
-    max-width: 100%;
-    min-width: 100%;
-    flex-direction: column;
-    position: relative;
-    flex: 1 1 auto;
-}
 
-.list-in .main-title{
+
+.signup{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 40px;
-    color: #fff;
-}
-
-.list-in .main-title h2:hover{
-    text-decoration: underline;
-}
-
-.list-in .none h2{
-    text-decoration: none;
-}
-
-.list-in .none{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 40px;
-    color: #fff;
-}
-
-.main-title span{
-    color: #838181;
-}
-
-.play-list{
-    display: flex;
-}
-.Rows{
-    width: 182px;
-    gap: 20px;
-    min-width: 182px;
-    
-}
-
-.Rows .item{
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 6px;
-    margin-top: 8px;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-.Rows .item img{
-    width: 100%;
-}
-
-.item1 img{
-    border-radius: 50%;
-}
-
-.item .card h4{
-    color: #fff;
-}
-.item .card p{
-    color: #8f8e8e;
-}
-
-.item:hover{
-    border: 1px solid #272626;
-    background: #272626;
-}
-
-.Rows .card i{
-    position: relative;
-    background: #1db954;
-    border-radius: 50%;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    top: -45px;
-    left: 124px;
-    opacity: 0;
-    transform: 1s ease all;
-}
-
-.Rows .item:hover .card i{
-    opacity: 1;
-}
-
-.other{
-    margin-top: -10px;
-}
-
-.Songs{
-    display: flex;
-    background: #242323;
-    background-color: #242323;
+    background: linear-gradient(to right, #ae2896, #509bf5);
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 12px 40px;
+}
+
+.signup h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.signup p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.signup button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
 }
 
 .handler {
@@ -567,161 +502,8 @@ hr{
     padding-bottom: 80px;
 }
 
-.music-player{
-    background-color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: #ddd;
-}
-
-.song-bar{
-    position: absolute;
-    left: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.5rem;
-    width: 20%;
-}
-
-.info{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-.info .image{
-    flex-shrink: 0;
-    width: 3.5em;
-    height: 3.5em;
-}
-
-.image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-i:hover{
-    color: #ddd;
-}
-
-.song-des p{
-    margin: 0.2rem;
-}
-
-.title, .artist{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
-}
-
-.artist{
-    color: #999;
-}
-
-.song-bar .icons{
-    display: flex;
-    gap: 1em;
-}
-
-.controler{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: #999;
-}
-
-.ctl-but{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-.play-pause{
-    display: inline-block;
-    padding: 15px;
-    background: #ddd;
-    color: #111;
-    border-radius: 50%;
-}
-
-.play-pause:hover{
-    transform: scale(1.1);
-    color: #111;
-}
-
-.pro-container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
-
-.pro-bar{
-    height: 4px;
-    border-radius: 10px;
-    width: 30%;
-    background-color: #ccc4;
-}
-
-.pro{
-    position: relative;
-    height: 100%;
-    width: 30%;
-    background-color: #999;
-    border-radius: 10px;
-}
-
-.pro-bar:hover .pro{
-    background-color: #2de;
-}
-
-.pro-bar:hover .pro::after{
-    content: "";
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    right: 0;
-    border-radius: 50%;
-    background-color: #ddd;
-    transform: translate(50%, calc(2px - 50%));
-}
-
-.other-fea{
-    position: absolute;
-    right: 1em;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    padding-top: 25px;
-}
-
-.volume-bar{
-    display: flex;
-    align-items: center;
-    gap: .7em;
-}
-
-.volume-bar .pro-bar{
-    width: 4em;
-}
-
-.volume-bar .pro-bar:hover .pro::after{
-    size: .8em;
-}
-
-.other-fea i{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 1em;
-    color: #ddd;
+@media (max-width: 300px) {
+    .left {
+        width: 150px;
+    }
 }
