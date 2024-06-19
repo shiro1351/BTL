@@ -31,10 +31,11 @@ a {
 
 .main {
     display: grid;
-    grid-template-columns: 395px auto;
+    grid-template-columns: 395px 1fr;
     height: 100%;
     gap: 8px;
     overflow: hidden;
+    min-width: 100px;
 }
 
 .left {
@@ -259,7 +260,7 @@ a {
     border: 1px solid #A7A7A7;
     border-radius: 20px;
     padding: 5px 10px;
-    color: #A7A7A7;
+    color: #fff;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -269,11 +270,237 @@ a {
     margin-right: 5px;
 }
 
+.lang:hover button{
+    border: 2.5px solid #fff;
+}
+
 body >.signup {
     background: linear-gradient(90deg, #AE2996, #5299F3);
 }
 
 .right{
     border-radius: 10px;
+    background: linear-gradient(rgb(33, 32, 32), #0d0c0c);
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+.right::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+    overflow-y:overlay;
+}
+
+.right::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 5px;
+}
+
+.right:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+    width: 5px;
+}
+
+.right .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    background: #121212;
+    height: 64px;
+    overflow: hidden;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    left: 410px;
+    contain: content;
+}
+
+.right .top .prev-but button{
+    background: #fff; /* Màu nền trắng */
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    align-items: center;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.right .top button i{
+    padding-left: 10px;
+}
+
+.top .prev-but button i{
+    color: #838181;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.top .login-but{
+    display: flex;
+}
+
+.login-but .sign-up{
+    padding: 8px 32px 8px 8px;
+    color: #838181;
+    font-size: 20px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.login-but .Login{
+    padding: 8px 32px;
+    font-size: 20px;
+    color: #242323;
+    border-radius: 20px;
+}
+
+.login-but .sign-up:hover{
     color: #fff;
+}
+
+.login-but .Login:hover {
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.list{
+    padding: 0px 16.8679px;
+    margin-top: 60px;
+}
+
+.Main .list .list-in{
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    flex-direction: column;
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.list-in .main-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.list-in .main-title h2:hover{
+    text-decoration: underline;
+}
+
+.list-in .none h2{
+    text-decoration: none;
+}
+
+.list-in .none{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.main-title span{
+    color: #838181;
+}
+
+.play-list{
+    display: flex;
+}
+.Rows{
+    width: 182px;
+    gap: 20px;
+    min-width: 182px;
+    
+}
+
+.Rows .item{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 8px;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.Rows .item img{
+    width: 100%;
+}
+
+.item1 img{
+    border-radius: 50%;
+}
+
+.item .card h4{
+    color: #fff;
+}
+.item .card p{
+    color: #8f8e8e;
+}
+
+.item:hover{
+    border: 1px solid #272626;
+    background: #272626;
+}
+
+.Rows .card i{
+    position: relative;
+    background: #1db954;
+    border-radius: 50%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    top: -45px;
+    left: 124px;
+    opacity: 0;
+    transform: 1s ease all;
+}
+
+.Rows .item:hover .card i{
+    opacity: 1;
+}
+
+.other{
+    margin-top: -10px;
+}
+
+.signup{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 40px;
+}
+
+.signup h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.signup p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.signup button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
 }
