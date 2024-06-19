@@ -6,10 +6,11 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
 </head>
 <body>
     <div class="main">
-        <div class="left">
+        <div class="left box">
             <div class="nav">
                 <div class="logo">
                     <img src="static/images/logo.png" alt="">
@@ -109,8 +110,10 @@
 
             
         </div>
+          
+        <div class="handler"></div>
 
-        <div class="right">
+        <div class="right box">
             <div class="top">
                 <div class="prev-but">
                     <button>
@@ -138,7 +141,7 @@
                     </div>
 
                     <div class="play-list">
-                        <div class="Rows">
+                        <div class="Rows" id="pointer">
                             <div class="item item1">
                                 <img src="static/images/image1.png" alt="">
                                 <div class="card">
@@ -149,7 +152,7 @@
                             </div>
                         </div>
 
-                        <div class="Rows">
+                        <div class="Rows pointer">
                             <div class="item item1">
                                 <img src="static/images/image1.png" alt="">
                                 <div class="card">
@@ -160,18 +163,7 @@
                             </div>
                         </div>
 
-                        <div class="Rows item1">
-                            <div class="item">
-                                <img src="static/images/image1.png" alt="">
-                                <div class="card">
-                                    <i class="fa-solid fa-play"></i>
-                                    <h4>dddd</h4>
-                                    <p>ddddd</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="Rows">
+                        <div class="Rows pointer">
                             <div class="item item1">
                                 <img src="static/images/image1.png" alt="">
                                 <div class="card">
@@ -182,7 +174,7 @@
                             </div>
                         </div>
 
-                        <div class="Rows">
+                        <div class="Rows pointer">
                             <div class="item item1">
                                 <img src="static/images/image1.png" alt="">
                                 <div class="card">
@@ -193,7 +185,7 @@
                             </div>
                         </div>
 
-                        <div class="Rows">
+                        <div class="Rows pointer">
                             <div class="item item1">
                                 <img src="static/images/image1.png" alt="">
                                 <div class="card">
@@ -204,7 +196,7 @@
                             </div>
                         </div>
 
-                        <div class="Rows">
+                        <div class="Rows pointer">
                             <div class="item item1">
                                 <img src="static/images/image1.png" alt="">
                                 <div class="card">
@@ -215,7 +207,7 @@
                             </div>
                         </div>
 
-                        <div class="Rows">
+                        <div class="Rows pointer">
                             <div class="item item1">
                                 <img src="static/images/image1.png" alt="">
                                 <div class="card">
@@ -226,7 +218,18 @@
                             </div>
                         </div>
 
-                        <div class="Rows">
+                        <div class="Rows pointer">
+                            <div class="item item1">
+                                <img src="static/images/image1.png" alt="">
+                                <div class="card">
+                                    <i class="fa-solid fa-play"></i>
+                                    <h4>dddd</h4>
+                                    <p>ddddd</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Rows pointer">
                             <div class="item item1">
                                 <div class="item ">
                                 <img src="static/images/image1.png" alt="">
@@ -657,18 +660,111 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="footer-container">
+                    <div class="footer">
+                        <div class="links">
+                            <div class="footer-column">
+                                <div>Công ty</div>
+                                <ul class="col-links">
+                                    <li><a href="">Giới thiệu</a></li>
+                                    <li><a href="">Việc làm</a></li>
+                                    <li><a href="">For the Record</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="footer-column">
+                                <div>Cộng đồng</div>
+                                <ul class="col-links">
+                                    <li><a href="">Dành cho các Nghệ sĩ</a></li>
+                                    <li><a href="">Nhà phát triển</a></li>
+                                    <li><a href="">Quảng cáo</a></li>
+                                    <li><a href="">Nhà đầu tư</a></li>
+                                    <li><a href="">Nhà cung cấp</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="footer-column">
+                                <div>Liên kết hữu ích</div>
+                                <ul class="col-links">
+                                    <li><a href="">Hỗ trợ</a></li>
+                                    <li><a href="">Ứng dụng di động miễn phí</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="footer-column">
+                                <div>Các gói của Spotify</div>
+                                <ul class="col-links">
+                                    <li><a href="">Prenium Individual</a></li>
+                                    <li><a href="">Prenium Student</a></li>
+                                    <li><a href="">Spotify Free</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="social">
+                            <div>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+    
+                <p class="copyright">
+                    &copy; 2024 Spotify AB
+                </p>
             </div>
         </div> 
     </div>
-    <footer></footer>
-    <div class="signup">
-        <div class="text">
-            <h4>Preview of Spotify</h4>
-            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>    
-    
-        
-        <div class="but">
-            <button>Sign-up Free</button>
+    <div class="Songs">
+        <div class="music-player">
+            <div class="song-bar">
+                <div class="info">
+                    <div class="image">
+                        <img src="static/images/image1.png" alt="">
+                    </div>
+                    <div class="song-des">
+                        <p class="title">No game No life</p>
+                        <p class="artist">Shiro</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-desktop"></i>
+                </div>
+            </div>
+        </div>
+        <div class="controler">
+            <div class="ctl-but">
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-random"></i>
+                <i class="play-pause fas fa-play"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-undo-alt"></i>
+            </div>
+            <div class="pro-container">
+                <span>0:49</span>
+                <div class="pro-bar">
+                    <div class="pro"></div>
+                </div>
+                <span>3:49</span>
+            </div>
+        </div>
+        <div class="other-fea">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-compress"></i>
+            <div class="volume-bar">
+                <i class="fas fa-volume-down"></i>
+                <div class="pro-bar">
+                    <div class="pro">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
