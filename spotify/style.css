@@ -347,15 +347,20 @@ a {
     background: transparent;
     border: 0;
     outline: 0;
+    
 }
-
+.login-but .sign-up>a{
+    color: grey;
+}
 .login-but .Login{
     padding: 8px 32px;
     font-size: 20px;
     color: #242323;
     border-radius: 20px;
 }
-
+.login-but .Login>a{
+    color: black;
+}
 .login-but .sign-up:hover{
     color: #fff;
 }
