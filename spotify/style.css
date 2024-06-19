@@ -480,6 +480,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 2px;
 }
 
 .handler {
@@ -729,4 +730,8 @@ i:hover{
     text-align: center;
     gap: 1em;
     color: #ddd;
+}
+
+.title:hover, .artist:hover{
+    text-decoration: underline;
 }
