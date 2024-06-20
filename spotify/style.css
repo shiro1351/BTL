@@ -738,7 +738,7 @@ i:hover{
 
 @media (max-width: 800px) {
     .main {
-        grid-template-columns: 150px 0.05px 1fr;
+        grid-template-columns: 200px 0.05px 1fr;
     }
 
     .right .top{
@@ -753,7 +753,7 @@ i:hover{
         z-index: 1;
         position: fixed;
         right: 0;
-        left: 174px;
+        left: 224px;
         contain: content;
     }
 
