@@ -735,3 +735,26 @@ i:hover{
 .title:hover, .artist:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 800px) {
+    .main {
+        grid-template-columns: 200px 0.05px 1fr;
+    }
+
+    .right .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 10px;
+        background: #121212;
+        height: 64px;
+        overflow: hidden;
+        align-items: center;
+        z-index: 1;
+        position: fixed;
+        right: 0;
+        left: 224px;
+        contain: content;
+    }
+
+}
